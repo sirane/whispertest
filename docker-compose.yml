@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  app:
+    build:
+      context: .
+    environment:
+      OPENAI_API_KEY: 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
+    command: python app.py
+    ports:
+      - "5000:5000"
